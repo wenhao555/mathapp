@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/line_content"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/layout_head"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/main_layout_margin"
+                android:layout_marginRight="@dimen/main_layout_margin"
+                android:layout_weight="1"
+                layout="@layout/view_head_ad" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/base_bar_bottom_color"
+                    android:layout_height="90dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/famous_book_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="@dimen/main_title_text_padding"
+                            android:paddingLeft="@dimen/main_title_text_padding"
+                            android:text="一年级上"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/main_title_text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/famous_book_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="@dimen/main_title_text_padding"
+                            android:paddingLeft="@dimen/main_title_text_padding"
+                            android:text="一年级下"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/main_title_text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/book_blue_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/famous_book_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="@dimen/main_title_text_padding"
+                            android:paddingLeft="@dimen/main_title_text_padding"
+                            android:text="二年级上"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/main_title_text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/book_blue_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/famous_book_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="@dimen/main_title_text_padding"
+                            android:paddingLeft="@dimen/main_title_text_padding"
+                            android:text="二年级下"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/main_title_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/main_layout_margin" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_layout_margin"
+                    android:layout_marginRight="@dimen/main_button_margin"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/user_manager_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/famous_book_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="三年级上"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_button_margin"
+                    android:layout_marginRight="@dimen/main_button_margin"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/exam_and_account_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/famous_book_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="三年级下"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_button_margin"
+                    android:layout_marginRight="@dimen/main_layout_margin"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/my_download_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/my_download_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="四年级上"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/main_layout_margin" >
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_layout_margin"
+                    android:layout_marginRight="@dimen/main_button_margin"
+                    android:layout_weight="1"
+                    layout="@layout/view_syn_tech" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_button_margin"
+                    android:layout_marginRight="@dimen/main_layout_margin"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/exam_and_account_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/exam_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="五年级上"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/main_layout_margin" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_layout_margin"
+                    android:layout_marginRight="@dimen/main_button_margin"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_famous"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/famous_book_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/famous_book_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="五年级下"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_button_margin"
+                    android:layout_marginRight="@dimen/main_layout_margin"
+                    android:layout_weight="1"
+                    layout="@layout/view_best_head" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/main_layout_margin"
+                android:paddingTop="@dimen/main_layout_margin" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_layout_margin"
+                    android:layout_marginRight="@dimen/main_button_margin"
+                    android:layout_weight="2" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tab_menu_bg_height"
+                        android:background="@color/sys_setting_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/setting_selector"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/out_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/main_title_text_padding"
+                        android:paddingLeft="@dimen/main_title_text_padding"
+                        android:text="退出登录"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_title_text_size" />
+                </RelativeLayout>
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_button_margin"
+                    android:layout_marginRight="@dimen/main_layout_margin"
+                    android:layout_weight="1"
+                    layout="@layout/view_about_us" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
